@@ -25,14 +25,14 @@ app.get('/blog', function (req, res) {
 })
 
 app.get('/contact', function (req, res) {
-    res.render('contactex', { 'message' :``})
+    res.render('contact', { 'message' :``})
   })
 
 app.post('/form', function(req, res) {
     var name=`${req.body.fname} ${req.body.lname}`
     // console.log('login attempt made for ' + req.body.email);
     console.log(`This is the information on the form:\nname:${name}`);
-    res.render('contactex', { 'message' :`This is the information on the form:\nname:${name}` });
+    res.render('contact', { 'message' :`This is the information on the form:\nname:${name}` });
 });
 
 app.listen(3000)

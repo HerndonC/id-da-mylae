@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Id Da Mylae</title>
+        <link rel="stylesheet" href="mylae.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/reviews">Reviews</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <h1>Contact me here</h1>
+
+        <div id="contactsub">
+        <form action="/form" method="post">
+           <label for="fname">First name:</label>
+            <input type="text" placeholder="John" id="fname" name="fname"><br>
+            <label for="lname">Last name:</label>
+            <input type="text" placeholder="Doe" id="lname" name="lname"><br>
+            <label for="email">Email:</label>
+            <input type="text" placeholder="johndoe@hotmail.com" id="email" name="email"><br>
+            <textarea placeholder="" id="message" ></textarea>
+            <br>
+            <input type="submit">
+        </form>
+        <script>
+            $("#submitForm").click(function() {
+               alert("Thanks for reaching out to me!");
+            });
+         </script>
+        </div>
+        
+      
+
+        <div class="socnavbar">
+            <ul>
+                <li><a href="https://twitter.com/ClintonHerndon3" target="_blank" rel="noopener">Twitter</a></li>
+                <li><a href="https://codepen.io/herndonc" target="_blank" rel="noopener">Codepen</a></li>
+                <li><a href="https://github.com/HerndonC" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="https://dev.to/herndonc" target="_blank"rel="noopener">Dev.to</a></li>
+                <li><a href="https://www.linkedin.com/in/clinton-herndon-b5a338118/" target="_blank" rel="noopener">Linkedin</a></li>
+            </ul>
+        </div>
+    </body>
+</html>
