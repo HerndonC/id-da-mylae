@@ -1,0 +1,59 @@
+body {
+    background: url("imgs/bg.jpeg") no-repeat center fixed;
+    background-size: cover;
+    color: cornsilk;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: cornsilk;
+}
+
+ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+nav li {
+    float: left;
+    margin: 0px;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 18px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+nav li a:hover {
+    background-color: darkgreen;
+}
+
+.socnavbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px 18px;
+    margin: 0px;
+    text-decoration: none;
+}
+
+.socnavbar li a:hover {
+    background-color: darkgreen;
+}
+
+.socnavbar li a:active {
+    background-color: darkslateblue;
+}
+
+#dog img  {
+    border-radius: 50%;
+    width: 500px;
+    border: 5px solid #4d4a4a
+}
