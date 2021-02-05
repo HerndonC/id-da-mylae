@@ -35,6 +35,9 @@ app.post('/form', function(req, res) {
     res.render('contact', { serverResponse :`Thanks for reaching out to me!:name:${name}` });
 });
 
-
-app.listen(3000)
+let port = process.env.PORT;
+if (port == null || port == "") {
+  port = 80;
+}
+app.listen(port);
 
