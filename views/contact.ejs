@@ -9,35 +9,45 @@
         <nav>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="/reviews">Reviews</a></li>
+                <li><a href="/recommendations">Recommendations</a></li>
                 <li><a href="/blog">Blog</a></li>
                 <li><a href="/contact">Contact</a></li>
             </ul>
         </nav>
         
-        <h1>Contact me here</h1>
+        <div class="contactsup">
+            <div class="contactbox">
+            
+                <h1>Contact me here</h1>
 
-        <div id="contactsub">
-        <form action="/form" method="post">
-           <label for="fname">First name:</label>
-            <input type="text" placeholder="John" id="fname" name="fname"><br>
-            <label for="lname">Last name:</label>
-            <input type="text" placeholder="Doe" id="lname" name="lname"><br>
-            <label for="email">Email:</label>
-            <input type="text" placeholder="johndoe@hotmail.com" id="email" name="email"><br>
-            <textarea placeholder="" id="message" ></textarea>
-            <br>
-            <input type="submit">
-        </form>
-        <script>
-            $("#submitForm").click(function() {
-               alert("Thanks for reaching out to me!");
-            });
-         </script>
+                <div class="contactsub">
+                <form action="/form" method="post">
+                <label for="fname">First name:
+                    <input type="text" placeholder="John" id="fname" name="fname"></label>
+                    <label for="lname">Last name:
+                    <input type="text" placeholder="Doe" id="lname" name="lname"></label>
+                    <label for="email">Email:
+                    <input type="text" placeholder="johndoe@hotmail.com" id="email" name="email"></label>
+                    <textarea placeholder="" id="message" ></textarea>
+                    <input type="submit">
+                </form>
+            </div>
+            <% if (serverResponse) {%>
+            <script type="text/javascript">
+                var response = '<%=serverResponse%>'
+                const showAlert = function(message) {
+                alert(message);
+                }
+
+                if(response) 
+                {
+                showAlert(response);
+                }
+                
+            </script>
+            <% }%>
+            </div>
         </div>
-        
-      
-
         <div class="socnavbar">
             <ul>
                 <li><a href="https://twitter.com/ClintonHerndon3" target="_blank" rel="noopener">Twitter</a></li>

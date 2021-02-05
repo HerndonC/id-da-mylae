@@ -16,8 +16,8 @@ app.get('/', function (req, res) {
   res.render('index')
 })
  
-app.get('/reviews', function (req, res) {
-    res.render('reviews')
+app.get('/recommendations', function (req, res) {
+    res.render('recommendations')
 })
 
 app.get('/blog', function (req, res) {
@@ -25,14 +25,16 @@ app.get('/blog', function (req, res) {
 })
 
 app.get('/contact', function (req, res) {
-    res.render('contact', { 'message' :``})
+    res.render('contact', { serverResponse :``})
   })
 
 app.post('/form', function(req, res) {
     var name=`${req.body.fname} ${req.body.lname}`
     // console.log('login attempt made for ' + req.body.email);
-    console.log(`This is the information on the form:\nname:${name}`);
-    res.render('contact', { 'message' :`This is the information on the form:\nname:${name}` });
+    console.log(`This is the information on the form:\nFirst Name\nLast Name\nE-mail:${name}`);
+    res.render('contact', { serverResponse :`Thanks for reaching out to me!:name:${name}` });
 });
 
+
 app.listen(3000)
+

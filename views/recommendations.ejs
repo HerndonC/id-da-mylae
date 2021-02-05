@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Id Da Mylae</title>
+        <link rel="stylesheet" href="mylae.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="/recommendations">Recommendations</a></li>
+                <li><a href="/blog">Blog</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header">
+            <h1>Recommendations</h1>
+            <h4>Here I talk about things I like</h4>
+        </div>
+        
+        <div class="tab">
+            <button class="tablinks" onclick="onClickSelectTab(event, 'Whiskey')">Whiskey</button>
+            <button class="tablinks" onclick="onClickSelectTab(event, 'Games')">Games</button>
+            <button class="tablinks" onclick="onClickSelectTab(event, 'Movies')">Movies</button>
+            <button class="tablinks" onclick="onClickSelectTab(event, 'Books')">Books</button>
+          </div>
+            <div class="tabopen">
+                <div id="Whiskey" class="tabcontent">
+                    <h3>Whiskey</h3>
+                    <h2>WHISTLEPIG PIGGYBACK RYE</h2>
+                    <img src="imgs/WhistlePig_PiggyBackRye.png" height="300px" alt="WhistlePig's PiggyBack Rye">
+                    <p>WhistlePig's Piggy Back Rye was recommended highly to me by a local whiskey connoisseur. The quality surprised me and the taste was very strong and smooth. 
+                        I'd say it compares to other whiskeys way above it's price range. It's aged 6 years, 100% rye and 96.56 proof. If you want more details you can go <a href="https://whistlepigwhiskey.com/whiskeys/piggyback-rye/">here</a>. and
+                        if you are one of those people that automatically looks down on 6 years, give this a shot first. </p>
+                </div>
+                
+                <div id="Games" class="tabcontent">
+                    <h3>Games</h3>
+                    <h2>The Textorcist: The Story of Ray Bibbia</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/NZF0UdhoFUQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p>Textorcist is a game I picked up last year and I've had a lot of fun with it. It combines bullet hells with typing and can get quite chaotic.
+                    The graphics are beautiful in a retro style and the game is adequetely difficult. Check out my youtube channel for more gameplay videos!</p>
+                </div>
+                
+                <div id="Movies" class="tabcontent">
+                    <h3>Movies</h3>
+                    <h2>The Thing</h2>
+                    <img src="imgs\thething.jpg" height="300px" alt="The Thing movie poster">
+                    <p> John Carpenter's 1982 film, "The Thing" is one of my favorite movies of all times. Now I like almost all genres, from horror to rom coms, but everything horror has been something I enjoy my whole life whether it be stories, movies, or games.
+                        The Thing is a movie that has inspired a lot of movies after and is way ahead of it's time. The atmosphere is perfect on an antartic base far away from society where others can help. The graphics were great and were actually a large part of 
+                        the budget. 
+                    </p>
+                </div>    
+
+                <div id="Books" class="tabcontent">
+                    <h3>Books</h3>
+                    <h2>Moonwalking with Einstein</h2>
+                    <img src="imgs\mwwe.jpg" height="300px" alt="Moonwalking with Einstein">
+                    <p>I'm currently reading Moonwalking with Einstein by Joshua Foer. It's a journalist's exploration and journey into the world of memory, what it is, how to improve it, and how to utilize it better. I'll give more details once I finish it!</p>
+                </div>
+            </div>
+
+        <div class="socnavbar">
+            <ul>
+                <li><a href="https://twitter.com/ClintonHerndon3" target="_blank" rel="noopener">Twitter</a></li>
+                <li><a href="https://codepen.io/herndonc" target="_blank" rel="noopener">Codepen</a></li>
+                <li><a href="https://github.com/HerndonC" target="_blank" rel="noopener">GitHub</a></li>
+                <li><a href="https://dev.to/herndonc" target="_blank"rel="noopener">Dev.to</a></li>
+                <li><a href="https://www.linkedin.com/in/clinton-herndon-b5a338118/" target="_blank" rel="noopener">Linkedin</a></li>
+            </ul>
+        </div>
+
+        <script>
+            function onClickSelectTab(evt, tabname) {
+  
+  var i, tabcontent, tablinks;
+
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+
+  document.getElementById(tabname).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+
+
+        </script>
+
+    </body>
+</html>
