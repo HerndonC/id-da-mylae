@@ -85,6 +85,7 @@ nav li a:hover {
     padding: 15px 18px;
     margin: 0px;
     text-decoration: none;
+    font-size: 2em;
 }
 
 .socnavbar li a:hover {
@@ -144,6 +145,7 @@ nav li a:hover {
     padding: 0;
     margin: 0 auto;
     margin-top: 20px;
+    margin-bottom: 75px;
     font-size: 2em;
 }
 
@@ -201,6 +203,7 @@ nav li a:hover {
       display: flex;
       justify-content: center;
       text-align: left;
+      margin-bottom: 75px;
   }
 
   /* .contactbox {
