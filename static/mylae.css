@@ -206,6 +206,11 @@ nav li a:hover {
       margin-bottom: 75px;
   }
 
+.fa-github {
+    width: 50px;
+    height: 50px;
+}
+
   /* .contactbox {
     background-color: rgba(160, 82, 45, .75);
     align-content: center;
