@@ -1,6 +1,8 @@
 html, body {
     margin: 0;
     padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: ;
 }
 
 body {
@@ -9,6 +11,10 @@ body {
     color: cornsilk;
     margin: 0;
     text-align: center;
+}
+
+p {
+    font-size: 2rem;
 }
 
 a {
@@ -38,6 +44,7 @@ nav li a {
     display: block;
     color: white;
     text-align: center;
+    text-size-adjust: 2em;
     padding: 15px 18px;
     margin: 0px;
     text-decoration: none;
@@ -129,14 +136,15 @@ nav li a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: sienna;
+    text-align: left;
+    background-color: rgba(160, 82, 45, .85);
     object-fit: scale-down;
     height: 50%;
-    width: 50%;
-    padding: 35px;
+    width: 100%;
+    padding: 0;
     margin: 0 auto;
     margin-top: 20px;
-    font-size: 1.5em;
+    font-size: 2em;
 }
 
 .contactsub form {
@@ -151,8 +159,13 @@ nav li a:hover {
     overflow: hidden;
     border: 1px solid #ccc;
     background-color: #f1f1f1;
+    text-size-adjust: 0;
   }
-  
+
+.tablinks {
+    font-size: 2em;
+}
+
   .tab button {
     background-color: inherit;
     float: left;
@@ -172,22 +185,25 @@ nav li a:hover {
   }
   
   .tabcontent {
-    background-color: rgba(160, 82, 45, .75);
+    background-color: rgba(160, 82, 45, .85);
+    display: flex;
     align-content: center;
+    align-items: center;
     display: none;
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
-    max-width: 50%;
+    max-width: 100%;
     font-size: 2em;
   }
 
   .tabopen {
       display: flex;
       justify-content: center;
+      text-align: left;
   }
 
-  .contactbox {
+  /* .contactbox {
     background-color: rgba(160, 82, 45, .75);
     align-content: center;
     padding: 6px 12px;
@@ -204,4 +220,4 @@ nav li a:hover {
     display: flex;
     width: 100%;
     height: 100%;
-  }
+  } */
